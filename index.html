@@ -38,20 +38,32 @@
             <p>Ayudante de gestión en el Centro de Transformación Digital (CTD) en ESPOL</p>
 
             <!-- Mapa con Leaflet -->
-            <div id="map" style="height: 300px; width: 100%; margin-top: 20px;"></div>
+            <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+            <style>
+                #map {
+                    height: 400px;
+                    /* Ajusta la altura del mapa */
+                    width: 100%;
+                    /* Ajusta el ancho del mapa */
+                }
+            </style>
+            <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+            <script>
+                // Inicializa el mapa y establece la vista en las coordenadas deseadas
+                var map = L.map('map').setView([-2.1751, -79.9220], 13); // Coordenadas de ESPOL
 
+                // Añade una capa de mapa de OpenStreetMap
+                L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    maxZoom: 19,
+                }).addTo(map);
+
+                // Añade un marcador en las coordenadas especificadas
+                L.marker([-2.1751, -79.9220]).addTo(map)
+                    .bindPopup('Centro de Transformación Digital')
+                    .openPopup();
+            </script>
         </section>
 
-        <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-        <script>
-            var map = L.map('map').setView([-2.1751, -79.9220], 13); // Coordenadas de ESPOL
-            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                maxZoom: 19,
-            }).addTo(map);
-            L.marker([-2.1751, -79.9220]).addTo(map)
-                .bindPopup('Centro de Transformación Digital')
-                .openPopup();
-        </script>
 
         <section id="educacion">
             <h2>Educación</h2>
