@@ -36,17 +36,12 @@
         <section id="experiencia">
             <h2>Experiencia</h2>
             <p>Ayudante de gestión en el Centro de Transformación Digital (CTD) en ESPOL</p>
+
+            <!-- Mapa con Leaflet -->
+            <div id="map" style="height: 400px;"></div>
+
         </section>
-        <script src="https://unpkg.com/leaflet/dist/leaflet.js">
-        
-            var map = L.map('map').setView([-2.1751, -79.9220], 13); // Coordenadas de ESPOL
-            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                maxZoom: 19,
-            }).addTo(map);
-            L.marker([-2.1751, -79.9220]).addTo(map)
-                .bindPopup('Centro de Transformación Digital')
-                .openPopup();
-        </script>
+
         <section id="educacion">
             <h2>Educación</h2>
             <ul>
@@ -85,6 +80,17 @@
             <li><a href="https://github.com/tunombre">GitHub</a></li>
         </ul>
     </footer>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script>
+        var map = L.map('map').setView([-2.1751, -79.9220], 13); // Coordenadas de ESPOL
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+        }).addTo(map);
+        L.marker([-2.1751, -79.9220]).addTo(map)
+            .bindPopup('Centro de Transformación Digital')
+            .openPopup();
+    </script>
 
 </body>
 
