@@ -42,6 +42,17 @@
 
         </section>
 
+        <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+        <script>
+            var map = L.map('map').setView([-2.1751, -79.9220], 13); // Coordenadas de ESPOL
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                maxZoom: 19,
+            }).addTo(map);
+            L.marker([-2.1751, -79.9220]).addTo(map)
+                .bindPopup('Centro de Transformación Digital')
+                .openPopup();
+        </script>
+
         <section id="educacion">
             <h2>Educación</h2>
             <ul>
@@ -81,16 +92,7 @@
         </ul>
     </footer>
 
-    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-    <script>
-        var map = L.map('map').setView([-2.1751, -79.9220], 13); // Coordenadas de ESPOL
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            maxZoom: 19,
-        }).addTo(map);
-        L.marker([-2.1751, -79.9220]).addTo(map)
-            .bindPopup('Centro de Transformación Digital')
-            .openPopup();
-    </script>
+
 
 </body>
 
