@@ -1,0 +1,75 @@
+:root {
+    --color1: #fff1f1;
+    --color2: #ff8eca;
+    --color3: #e7e2c2;
+    --color4: #68f2ff;
+    --color5: #000000;
+}
+
+#experience {
+    margin-top: 0px;
+    margin: 40px 0;
+    justify-content: center;
+    text-align: center;
+}
+
+#experience h3 {
+    text-align: justify;
+    color: #ff8eca;
+}
+
+#experience p {
+    text-align: justify;
+}
+
+#experience ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+#experience li {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper-1-1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--color1);
+    border-radius: 5px;
+    width: 100%;
+    max-width: 1200px;
+    box-shadow: 5px 5px 5px var(--color1), -5px -5px 5px rgba(255, 255, 255, 0.7);
+}
+
+.texto-tarjeta {
+    padding: 20px;
+    width: 50%;
+    text-align: justify;
+    background-color: rgb(250, 236, 242);
+}
+
+.tarjeta-experiencia iframe,
+.tarjeta-experiencia img {
+    width: 50%;
+    max-height: 300px;
+    border: none;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+@media (max-width: 767px) {
+    #experience ul {
+        flex-direction: column;
+    }
+
+    .wrapper-1-1 {
+        width: 100%;
+    }
+}

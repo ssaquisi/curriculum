@@ -1,144 +1,303 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Curriculum Vitae Silvia Saquisili">
+    <meta name="keywords" content="Desarrollador Web, Python, Java,
+        C, JavaScript, BackEnd, FrontEnd, Programación, Desarrollo de
+        Software, Ingeniero de Software">
+    <meta name="author" content="Silvia Saquisili Fuentes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Silvia Saquisili - CV</title>
-    <meta name="keywords" content="desarrollador web, Python, Django,
-        React, JavaScript, backend, frontend, programación, desarrollo de
-        software, ingeniero de software">
-    <meta name="author" content="Silvia Saquisili">
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./img/icon-head.png" type="image/x-icon">
+    <link rel="stylesheet" href="./stylesheets/styles.css">
+    <link rel="stylesheet" href="./stylesheets/header-styles.css">
+    <link rel="stylesheet" href="./stylesheets/nav-header.css">
+    <link rel="stylesheet" href="./stylesheets/education.css">
+    <link rel="stylesheet" href="./stylesheets/skills.css">
+    <link rel="stylesheet" href="./stylesheets/about.css">
+    <link rel="stylesheet" href="./stylesheets/contact.css">
+    <link rel="stylesheet" href="./stylesheets/projects.css">
+    <link rel="stylesheet" href="./stylesheets/experience.css">
+    <link rel="stylesheet" href="./stylesheets/footer.css">
+    <link href='https://fonts.googleapis.com/css?family=Fira Code' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 
 <body>
-    <h1>Curriculum Vitae</h1>
-
-    <header>
-        <h1>Silvia Saquisili</h1>
-        <p>Estudiante | ssaquisi@espol.edu.ec | 0979078720</p>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="#resumen">Resumen</a></li>
-            <li><a href="#experiencia">Experiencia</a></li>
-            <li><a href="#educacion">Educación</a></li>
-            <li><a href="#habilidades">Habilidades</a></li>
-            <li><a href="#proyectos">Proyectos</a></li>
-            <li><a href="#contactanos">Contáctanos</a></li>
-        </ul>
+    <nav class="nav-header">
+        <div class="container-nav">
+            <figure>
+                <img src="./img/icon-head.png" alt="logo" title="cv">
+            </figure>
+            <ul>
+                <li><a href="#aboutme">Sobre mí</a></li>
+                <li><a href="#education">Educación</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#projects">Proyectos</a></li>
+                <li><a href="#experience">Experiencia</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </div>
     </nav>
+
+    <header class="header-container">
+        <section>
+            <figure>
+                <img src="./img/perfil.jpg" alt="Silvia Saquisili" width="50px">
+            </figure>
+            <div class="typewriter">
+                <h1 style="color: white;" id="name">Silvia Saquisili</h1>
+                <h3 style="color: white;">ssaquisi@espol.edu.ec</h3>
+            </div>
+        </section>
+    </header>
+
     <main>
-        <section id="resumen">
-            <h2>Resumen</h2>
-            <img src="https://placehold.co/600x400" alt="Placeholder Image" />
-            <p>Desarrollador junior desde hace 3 años, con experiencia en proyectos...</p>
-        </section>
-        <section id="experiencia">
-            <h2>Experiencia</h2>
-            <p>Ayudante de gestión en el Centro de Transformación Digital (CTD) en ESPOL</p>
-
-            <!-- Mapa con Leaflet -->
-            <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-            <style>
-                #map {
-                    height: 400px;
-                    /* Ajusta la altura del mapa */
-                    width: 100%;
-                    /* Ajusta el ancho del mapa */
-                }
-            </style>
-            <div id="map"></div>
-            <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-            <script>
-                // Inicializa el mapa y establece la vista en las coordenadas deseadas
-                var map = L.map('map').setView([-2.1751, -79.9220], 13); // Coordenadas de ESPOL
-
-                // Añade una capa de mapa de OpenStreetMap
-                L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                    maxZoom: 19,
-                }).addTo(map);
-
-                // Añade un marcador en las coordenadas especificadas
-                L.marker([-2.1751, -79.9220]).addTo(map)
-                    .bindPopup('Centro de Transformación Digital')
-                    .openPopup();
-            </script>
-        </section>
 
 
-        <section id="educacion">
-            <h2>Educación</h2>
+        <div id="container-hr">
+            <hr class="one">
+        </div>
+
+        <section itemprop="aboutme" id="aboutme">
+            <h2>C O N Ó C E M E</h2>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                deserunt mollit anim id est laborum
+                Estudiante de la carrera de Ingeniería en Ciencias de la Computación
+                en la Facultad de Ingeniería en Electricidad y Computación
+                de la Escuela Superior Politécnica del Litoral (ESPOL).
+                Además de mi formación académica, me especializo en e-commerce, al contar
+                con más de 5 años de experiencia dentro esta área.
+                Busco contribuir al desarrollo de soluciones innovadoras que
+                mejoren la experiencia de vida de otras personas, explorando
+                nuevas tendencias para mantenerme actualizada con los avances
+                en mi campo de estudio.
             </p>
+        </section>
 
+        <div id="container-hr">
+            <hr class="one">
+        </div>
+
+        <section itemprop="education" id="education">
+            <h2>E D U C A C I Ó N</h2>
+
+            <div class="education_area">
+                <div class="area_element">
+                    <div class="area_name">
+                        <p>
+                            <b>Unidad Educativa Liceo Cristiano de Guayaquil (LCG)</b>
+                        </p>
+                    </div>
+                    <div class="area_description">
+                        <p>
+                            <a href="https://liceocristiano.edu.ec/">
+                                <img src="./img/logo-liceo.jpg" alt="Liceo Cristiano de Guayaquil"
+                                    class="image_education">
+                            </a>
+                        </p>
+                    </div>
+                </div>
+                <div class="area_gap">
+                    <div class="gap_ring">
+                        <div class="gap_circle"></div>
+                    </div>
+                </div>
+                <div class="area_element area_element--right">
+                    <div class="area_name">
+                        <p>
+                            <b>Escuela Superior Politécnica del Litoral (ESPOL)</b>
+                        </p>
+                    </div>
+                    <div class="area_description">
+                        <p>
+                            <a href="https://www.espol.edu.ec/es">
+                                <img src="./img/espol-logo.png" alt="ESPOL" class="image_education">
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div id="container-hr">
+            <hr class="one">
+        </div>
+
+        <section class="container" itemprop="skills" id="skills">
+            <h2>H A B I L I D A D E S</h2>
+            <p>He desarrollado proyectos en los siguientes lenguajes:</p>
+            <ul>
+                <li><i class="fab fa-python"></i></li>
+                <li><i class="fab fa-java"></i></li>
+                <li><i class="fab fa-js"></i></li>
+                <li><i class="fab fa-html5"></i></li>
+                <li><i class="fab fa-css3-alt"></i></li>
+            </ul>
 
 
         </section>
-        <section id="habilidades">
-            <h2>Habilidades</h2>
+
+        <div id="container-hr">
+            <hr class="one">
+        </div>
+
+        <section class="projects" itemprop="projects" id="projects">
+            <h2 style="color: black;">P R O Y E C T O S</h2>
+            <div class="contenido-seccion">
+                <div class="galeria-proyectos contenedor-proyectos">
+                    <div class="tarjeta-proyecto">
+                        <img src="./img/proj1.png" alt="Optimus Prime Motors">
+                        <div class="contenido-tarjeta-proyecto">
+                            <div class="etiquetas-proyecto">
+                                <span>Java</span>
+                                <span>Estructuras de Datos</span>
+                            </div>
+                            <div class="titulo-proyecto">Optimus Prime Motors</div>
+                            <div class="description-proyecto">Desarrollo de una aplicación que permita la venta y compra
+                                de vehículos, incluyendo una sección de favoritos para intereses futuros.</div>
+                            <div class="boton-proyecto"><a
+                                    href="https://github.com/KevinJSalazar/Proyecto1-Estructuras-Grupo10"
+                                    target="_blank">Código fuente</a></div>
+                        </div>
+                    </div>
+                    <div class="tarjeta-proyecto">
+                        <img src="./img/proj2.png" alt="Polytechnic Turtle Games">
+                        <div class="contenido-tarjeta-proyecto">
+                            <div class="etiquetas-proyecto">
+                                <span>Java</span>
+                                <span>Estructuras de Datos</span>
+                            </div>
+                            <div class="titulo-proyecto">Polytechnic Turtle Games</div>
+                            <div class="description-proyecto">Desarrollo de una aplicación de juegos de adivinación,
+                                donde el usuario pueda elegir si desea retar (o ser retado) por la computadora.</div>
+                            <div class="boton-proyecto"><a
+                                    href="https://github.com/KevinJSalazar/Proyecto2-EstructurasDatos.git"
+                                    target="_blank">Código fuente</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
-        <section id="proyectos">
-            <h2>Proyectos</h2>
-            <ol>
-                <li>2023 — 2024</li>
-                <li>SONAR — Detección de objetos en cuerpos de agua.</li>
-                <li>Laboratorio CTD</li>
-            </ol>
 
-            <iframe width="600" height="400" src="https://www.youtube.com/embed/2DZyqhLioQQ" frameborder="0"
-                allowfullscreen></iframe>
+        <div id="container-hr">
+            <hr class="one">
+        </div>
 
+        <section class="container" itemprop="experience" id="experience">
+            <h2>E X P E R I E N C I A</h2>
+            <ul>
+                <li>
+                    <div class="wrapper-1-1 tarjeta-experiencia">
+                        <div class="texto-tarjeta">
+                            <h3>Ayudante de Gestión — CTD</h3>
+                            <p>He trabajado como ayudante de gestión en proyectos encargados dentro del Centro de
+                                Transformación Digital Industrial en ESPOL.
+                                Brindé ayuda en actividades como control de muestras y creación de código para detectar
+                                objetos dentro de cuerpos de agua.
+                            </p>
+                        </div>
+                        <iframe width="600" height="400" src="https://www.youtube.com/embed/YtGSK_RL0-8" frameborder="0"
+                            allowfullscreen></iframe>
+                    </div>
+                </li>
+                <li>
+                    <div class="wrapper-1-1 tarjeta-experiencia">
+                        <div class="texto-tarjeta">
+                            <h3>E-commerce</h3>
+                            <p>Por varios años he trabajado como administrador de páginas dedicadas al e-commerce.
+                                Cuento con un negocio propio del mismo índole.</p>
+                        </div>
+                        <img src="https://picsum.photos/300/300" alt="website desarrollado">
 
-            <!-- Mapa de Google -->
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d127584.48547728956!2d-80.04697137196383!3d-2.147877980766637!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sec!4v1728502151575!5m2!1ses-419!2sec"
-                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-
+                    </div>
+                </li>
+            </ul>
         </section>
-        <section id="contactanos">
-            <h2>Contáctanos</h2>
-            <form>
-                <label for="nombre">Nombre Completo:</label>
-                <input type="text" id="nombre" name="nombre" required>
-                <label for="email">Correo Electrónico:</label>
-                <input type="email" id="email" name="email" required>
-                <label for="experiencia">Experiencia Laboral:</label>
-                <textarea id="experiencia" name="experiencia" rows="5" required></textarea>
-                <label for="educacion">Educación:</label>
-                <textarea id="educacion" name="educacion" rows="5" required></textarea>
-                <label>Habilidades Técnicas:</label><br>
-                <input type="checkbox" name="habilidades" value="HTML"> HTML
-                <input type="checkbox" name="habilidades" value="CSS"> CSS
-                <input type="checkbox" name="habilidades" value="JavaScript">
-                JavaScript
-                <label for="intereses">Intereses:</label>
-                <select id="intereses" name="intereses">
-                    <option value="desarrollo">Desarrollo Web</option>
-                    <option value="diseno">Diseño Gráfico</option>
-                    <option value="marketing">Marketing Digital</option>
-                </select>
-                <button type="submit">Enviar</button>
-            </form>
 
+        <div id="container-hr">
+            <hr class="one">
+        </div>
+
+        <section class="container" id="contact">
+            <h2> C O N T Á C T A M E</h2>
+            <div class="wrapper-2-1 wrapper-1-1">
+                <section itemprop="contacto" id="contacto">
+
+
+                    <div class="typewriter">
+                        <h1 id="saludo" style="color: black;"> ENVÍAME UN MENSAJE </h1>
+                        <h1 id="saludo" style="color: white;"> Respondo al instante 📨 </h1>
+                    </div>
+
+                    <form>
+                        <div class="form-group">
+                            <label for="nombreCompleto">Nombre completo:</label>
+                            <input type="text" id="nombreCompleto" name="nombreCompleto" required
+                                placeholder="Ej.: Silvia Saquisili">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Correo electrónico:</label>
+                            <input type="email" id="email" name="email" required
+                                placeholder="Ej.: ssaquisi@espol.edu.ec">
+                        </div>
+                        <div class="form-group">
+                            <label for="mensaje">Mensaje:</label>
+                            <textarea id="mensaje" name="mensaje" rows="4" required
+                                placeholder="Escribe aquí tu mensaje."></textarea>
+                        </div>
+                        <input type="submit" value="Enviar Mensaje">
+                    </form>
+
+                </section>
+
+                <div id="mapa">
+                    <p>
+                        Puedes encontrarme de forma presencial,
+                        de miércoles a viernes, en el horario de
+                        10h00 a 16h00. Recuerda contactarme previamente.
+                    </p>
+
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d16280.566395450967!2d-79.9481465!3d-2.1238676!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d73146ef866c9%3A0x5043154c468a9845!2sManualidades%20Pochita!5e1!3m2!1ses-419!2sec!4v1730424232499!5m2!1ses-419!2sec"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+
+                </div>
         </section>
+
     </main>
-    <footer>
-        <p>© Silvia Saquisili - 2024</p>
-        <ul>
-            <li><a href="https://www.linkedin.com/in/tunombre">LinkedIn</a></li>
-            <li><a href="https://github.com/tunombre">GitHub</a></li>
-        </ul>
+
+    <footer id="my-footer">
+        <div class="footer-content">
+            <div class="text-container">
+                <p> Web realizada por Silvia Saquisili</p>
+            </div>
+
+            <div class="social-icons">
+                <a href="https://github.com/ssaquisi" target="_blank">
+                    <svg fill="var(--color5)" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                        height="24">
+                        <path
+                            d="M12 0C5.373 0 0 5.373 0 12c0 5.303 3.438 9.8 8.205 11.387.6.11.82-.258.82-.577v-2.158c-3.338.727-4.042-1.415-4.042-1.415-.546-1.387-1.334-1.757-1.334-1.757-1.09-.745.082-.73.082-.73 1.205.084 1.84 1.236 1.84 1.236 1.07 1.835 2.806 1.305 3.492.997.107-.775.418-1.305.762-1.606-2.665-.305-5.467-1.334-5.467-5.93 0-1.31.467-2.382 1.235-3.222-.124-.303-.535-1.526.118-3.176 0 0 1.007-.323 3.3 1.23.957-.266 1.983-.399 3.003-.403 1.02.004 2.046.137 3.003.403 2.29-1.553 3.296-1.23 3.296-1.23.656 1.65.245 2.873.12 3.176.77.84 1.235 1.912 1.235 3.222 0 4.61-2.807 5.624-5.478 5.92.43.37.823 1.102.823 2.222v3.293c0 .319.218.69.825.575C20.565 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z" />
+                    </svg>
+                </a>
+                <a href="https://www.linkedin.com/in/silvia-saquisili-fuentes-1ab980239/" target="_blank">
+                    <svg fill="var(--color5)" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                        height="24">
+                        <path
+                            d="M22.23 0H1.77C.792 0 0 .774 0 1.729v20.543C0 23.225.792 24 1.77 24H22.23C23.207 24 24 23.225 24 22.271V1.729C24 .774 23.207 0 22.23 0zM7.081 20.452H3.56V9.047h3.521v11.405zM5.32 7.659C4.179 7.659 3.25 6.719 3.25 5.616S4.179 3.574 5.32 3.574c1.143 0 2.073.941 2.073 2.042 0 1.103-.93 2.043-2.073 2.043zm14.837 12.793h-3.521v-5.539c0-1.323-.024-3.028-1.847-3.028-1.848 0-2.13 1.445-2.13 2.938v5.629h-3.52V9.047h3.377v1.557h.048c.47-.889 1.614-1.828 3.325-1.828 3.56 0 4.215 2.342 4.215 5.38v6.296z" />
+                    </svg>
+                </a>
+            </div>
+        </div>
     </footer>
-
-
 
 </body>
 

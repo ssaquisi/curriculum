@@ -1,0 +1,14 @@
+:root {
+    --color1: #fff1f1;
+    --color2: #ff8eca;
+    --color3: #e7e2c2;
+    --color4: #68f2ff;
+    --color5: #000000;
+}
+
+#aboutme {
+    margin-top: 0px;
+    margin: 40px 0;
+    justify-content: center;
+    text-align: center;   
+}

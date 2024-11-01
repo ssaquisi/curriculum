@@ -1,0 +1,73 @@
+:root {
+    --color1: #fff1f1;
+    --color2: hsl(328, 100%, 78%);
+    --color3: #e7e2c2;
+    --color4: #68f2ff;
+    --color5: #000000;
+}
+
+#education {
+    margin-top: 0px;
+    margin: 40px 0;
+    justify-content: center;
+    text-align: center;   
+}
+
+.education {
+    background-color: #000000;
+    padding: 50px 255px;
+    text-align: center;
+    justify-content: center;
+}
+
+.education_area {
+    display: grid;
+    grid-template-columns: 49% 2% 49%;
+    margin: 1 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.area_element {
+    margin: 15px 0;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    min-width: 250px;
+    flex: 1;
+    
+}
+
+.area_element--right {
+    flex-direction: row;
+}
+
+
+.area_name {
+    padding: 50px;
+    background-color: #ffffff;
+    color: #fff6f6;
+    justify-content: center;
+}
+p {
+    text-align: center;
+    color: #191818;
+    justify-content: center;
+}
+.area_description {
+    padding: 20px;
+    background-color: #ffb3d9;
+    text-align: center;
+}
+
+.image_education {
+    width: 120px;
+    height: 120px;
+    border-radius: 0%;
+}
+
+@media (max-width: 600px) {
+    .education_area {
+        grid-template-columns: 1fr; 
+    }
+}
